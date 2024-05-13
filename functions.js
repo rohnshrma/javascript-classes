@@ -63,3 +63,34 @@
 
 
 
+
+// var add = ()=>{
+//     console.log("adding");
+// }
+
+// add()
+
+// in case of exactly a single parameter () can be ommited
+
+// var greet = name =>{
+//     console.log("hello world my name is " + name);
+// }
+
+// greet("abhishek")
+
+
+// if all your function does is return something {} and return keyword can be ommited
+
+
+var add = (x, y) => x + y
+
+
+console.log(add(12, 23))
+
+
+
+var marks = [213, 34, 4, 2342, 423, 234242, 42, 34, 34]
+
+
+ var square = marks.map(mark => mark ** 2)
+ console.log(square);

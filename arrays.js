@@ -283,5 +283,376 @@ var animals = ["Lion", "Bear", "Tiger", "Lion", "Cat", "deer"]
 // printDetails(data)
 
 // function data(){
-    // return 100
+// return 100
 // }
+
+
+
+
+
+
+
+
+// function lifeSpan(fn){
+//    var age = fn()
+//    var average_age = 90
+//    var year_left = average_age - age
+//    console.log("Years Left :",year_left);
+// }
+
+// lifeSpan(function(){
+//     var yob = parseInt(prompt("Enter your year of birth :"))
+//         var cy = new Date().getFullYear()
+//         return cy - yob //return age
+// })
+
+
+// lifeSpan(calcAge)
+
+
+
+// function calcAge(){
+//     var yob = parseInt(prompt("Enter your year of birth :"))
+//     var cy = new Date().getFullYear()
+//     return cy - yob //return age
+// }
+
+
+
+// for(var i = 0 ; i < animals.length ;i++){
+//     var animal = animals[i]
+//     console.log(animal);
+// }
+
+
+// higher order functions
+// animals.forEach(function(animal){
+//     console.log(animal);
+// })
+
+
+
+// var sum = 0 
+// marks.forEach(function(mark,index,self){
+//     sum+=mark
+//     console.log(mark,index,"current Array =>",self);
+// })
+// console.log(sum);
+
+
+
+// var doubles = []
+// for (var i = 0;i < marks.length;i++){
+//     var mark = marks[i]
+//     doubles.push(mark*2)
+// }
+// console.log(doubles);
+
+
+
+// return a new array after performing specified action on each item
+// var result = marks.map(function(mark){
+// return mark * 2
+// })
+
+// console.log(result);
+
+
+
+
+// var isEvens = marks.map(function(mark){
+//     return mark % 2 == 0
+// })
+
+// console.log(isEvens);
+
+
+// var isEvens = []
+// for (var i = 0;i < marks.length;i++){
+//     var mark = marks[i]
+//     isEvens.push(mark % 2 == 0)
+// }
+// console.log(isEvens);
+
+
+// ================================== arr.filter
+
+
+// var evens = []
+// for (var i = 0;i < marks.length;i++){
+//     var mark = marks[i]
+//     if(mark % 2 == 0){
+//         evens.push(mark)
+//     }
+// }
+// console.log(evens);
+
+
+
+
+
+// var evens = marks.filter(function(mark){
+// return mark % 2 == 0
+// })
+// console.log(evens);
+
+
+
+// var txt = prompt("Enter a big string : ")
+// var list = txt.split("")
+
+// var vowels = list.filter(function(chr){
+//     return chr == "a" || chr == "e" || chr == "i" || chr == "o" || chr == "u" 
+// })
+// console.log(vowels);
+
+
+
+
+
+// case : when accumulaters value is not explicitly provided
+// acc : arr[0] , cv : arr[1]
+
+// var sum = marks.reduce(function(acc,cv){ 
+// return  acc + cv // acc = acc + cv
+// })
+
+
+
+
+
+
+
+
+
+
+
+
+
+// var marks = [213, 34, 3, 23, 23, 1,34, 5, 5767, 234]
+
+var fruits = ["apple", "kiwi", "Dragonfruit", "banana", "orange", "cherry", "papaya"]
+
+// var res = fruits.sort((a,b)=>{
+//     return b-a
+// })
+
+// console.log(res);
+
+
+// var res = fruits.sort((a,b)=> {
+// return a.length - b.length
+//     return  b.length - a.length 
+// })
+// console.log(res);
+// var res = marks.sort((a,b)=> a-b)
+// var res = marks.sort((a,b)=> b-a)
+// some , every , sort
+
+
+// var res = marks.some((mark)=>{
+//     return mark % 2 == 0
+// })
+
+// console.log(res);
+
+// var res = marks.every((mark)=>{
+//     return mark % 2 == 0
+// })
+
+// console.log(res);
+
+
+// case : when accumulaters value is explicitly provided
+// acc : initialValue , cv : arr[0]
+// var sum = marks.reduce(function (acc, cv) {
+//     return acc + cv // acc = acc + cv
+// }, 0)
+
+// var result = marks.reduce(function(max, cv){
+//     if (cv > max){
+//         return cv
+//     }else{
+//         return max
+//     }
+// })
+
+
+// var result = marks.reduce(function(min, cv){
+//     if (cv < min){
+//         return cv
+//     }else{
+//         return min
+//     }
+// } , marks[0])
+
+
+// var result = marks.reduce(function(max, cv){
+//     if (cv > max){
+//         return cv
+//     }else{
+//         return max
+//     }
+// } , marks[0])
+
+
+
+
+// anonymous  functions can be assigned as a value to a variable
+// var bmi = function (w, h) {
+//     return w / h ** 2
+// }
+
+// console.log(bmi(90,1.80))
+
+
+// function calAge(){
+//     var yob = parseInt(prompt("Enter your year of birth : "))
+//     var cy = new Date().getFullYear()
+//     return cy - yob
+// }
+
+// var myAge = calAge()
+// console.log(myAge);
+
+
+
+// function lifeSpan(average_age , ageFunc){
+//     var age = ageFunc()
+//     var year_left = average_age - age
+//     console.log(`years left : ${year_left}`);
+// }
+// lifeSpan(100,function (){
+//         var yob = parseInt(prompt("Enter your year of birth : "))
+//         var cy = new Date().getFullYear()
+//         return cy - yob
+//     }).
+
+
+// function add(){
+// var x = parseInt(prompt("Enter the value of num 1:")) 
+// var y = parseInt(prompt("Enter the value of num 2:")) 
+// return x + y
+// }
+
+// function printData(cb){
+// console.log(`the result is : ` , cb());
+// }
+
+// printData(function (){
+//     var x = parseInt(prompt("Enter the value of num 1:")) 
+//     var y = parseInt(prompt("Enter the value of num 2:")) 
+//     return x + y
+//     })
+
+
+// arrays => a data type used to store multiple values of different data types
+
+// [ item1, item2,......] are used to create an array
+
+// var names = ["Esha","Rohan","Sharma","Dagar","Rana"]
+
+// console.log(names[0]);
+
+// names.push("bye bye world")
+
+// names.pop()
+
+// removes the item on the 0th index
+// names.shift()
+
+// names.unshift("bye bye world")
+
+
+
+// console.log(names);
+
+
+
+// function findSum(arr) {
+//     var sum = 0
+//     for (var i = 0; i < arr.length; i++) {
+//         sum += arr[i]
+//     }
+//     return sum
+// }
+
+
+
+var marks = [213, 34, 3, 23, 23, 1, 34, 5, 5767, 234]
+
+// console.log(findSum(marks))
+// console.log(findSum([213, 34, 3, 23, 23, 1, 34, 5, 5767,345,23,2,3 ,234]))
+// console.log(findSum([213, 34, 3, 23, 23, 1, 34, 5, 576,34,34,3,4,7, 234]))
+
+
+
+// helps us to iterate (go over) an array : void
+
+// function findSum(arr) {
+//     var sum = 0
+
+//     arr.forEach(function (value, index, self) {
+//         sum+=value
+//     })
+
+//     return sum
+// }
+
+
+// console.log(findSum(marks))
+
+// helps us to iterate (go over) an array : array(storing the result of the action performed)
+
+// var doubles = marks.map(function(mark,index,self){
+// return mark*2
+// })
+
+// console.log(doubles);
+
+
+// var doubles = []
+// for (var i = 0 ; i < marks.length ;i++){
+//     doubles.push(marks[i] * 2)
+// }
+
+// console.log(doubles);
+
+
+// function findOdds(arr) {
+//     var odds = []
+//     arr.forEach(function (value) {
+//         value % 2 != 0 && odds.push(value)   
+//     })
+//     return odds
+
+// }
+
+// console.log(findOdds(marks));
+
+
+
+// function findEvens(arr) {
+//     var evens = []
+//     arr.forEach(function (value) {
+//         value % 2 == 0 && evens.push(value)   
+//     })
+//     return evens
+
+// }
+
+// console.log(findEvens(marks));
+
+
+
+
+var evens = marks.filter(function(value){
+return value % 2 == 0
+})
+
+console.log(evens);
+var odds = marks.filter(function(value){
+return value % 2 != 0
+})
+
+console.log(odds);
